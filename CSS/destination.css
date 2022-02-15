@@ -16,7 +16,7 @@
   --clr-white: #ffffff;
   --clr-transp-light: rgba(255, 255, 255, 0.3);
 
-  --fs-900: clamp(4.1rem, 10vw + 1rem, 6.375rem);
+  --fs-900: clamp(4rem, 10vw + 1rem, 6.375rem);
 }
 html,
 body {
