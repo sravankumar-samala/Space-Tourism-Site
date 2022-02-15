@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!---------------------css links----------------------->
+
+    <link rel="stylesheet" href="css/destination.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <!----------------------------------------------------->
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="body-destination">
+    <header id="mynav">
+      <a href="index.html" class="logo">
+        <img src="assets/shared/logo.svg" alt="logo" class="logo-img" />
+      </a>
+
+      <button
+        class="nav-toggler"
+        aria-controls="nav-list"
+        aria-expanded="false"
+      >
+        <span class="sr-only">menu</span>
+      </button>
+
+      <ul class="nav-list" data-visible="false" id="nav-list">
+        <div class="line"></div>
+        <li class="nav-item uppercase">
+          <a href="index.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">00</span>home</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a href="crew-commander.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">01</span>crew</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a
+            href="destination-moon.html"
+            data-visible="false"
+            class="a-tag active"
+            ><span aria-hidden="true" class="num-indicator">02</span
+            >destination</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a href="technology-vehicle.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">03</span
+            >technology</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main class="grid-container-dest grid-container grid">
+      <p
+        class="tittle clr-light ff-cond fs-500 uppercase letter-space-1 line-h fw-normal"
+      >
+        <span aria-hidden="true" class="num-indicator" id="num-indic-id"
+          >01</span
+        >pick your destination
+      </p>
+      <img
+        src="./assets/destination/image-europa.png"
+        alt="moon image"
+        class="img"
+      />
+
+      <div class="menu-list flex">
+        <a href="destination-moon.html"
+          ><buttons
+            aria-selected="true"
+            class="menu-btn fs-400 uppercase clr-light fw-normal ff-cond letter-space-3"
+            >moon</buttons
+          ></a
+        >
+        <a href="destination-mars.html"
+          ><buttons
+            aria-selected="true"
+            class="menu-btn fs-400 uppercase clr-light fw-normal ff-cond letter-space-3"
+            >mars</buttons
+          ></a
+        >
+        <a href="destination-europa.html"
+          ><buttons
+            aria-selected="true"
+            class="active menu-btn fs-400 uppercase clr-light fw-normal ff-cond letter-space-3"
+            >europa</buttons
+          ></a
+        >
+        <a href="destination-titan.html"
+          ><buttons
+            aria-selected="true"
+            class="menu-btn fs-400 uppercase clr-light fw-normal ff-cond letter-space-3"
+            >titan</buttons
+          ></a
+        >
+      </div>
+
+      <article class="content">
+        <h1 class="big-tittle fs-900 clr-white ff-bella fw-normal uppercase">
+          Europa
+        </h1>
+        <p class="ff-normal clr-light line-h fs-500 fw-normal">
+          The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+          winter lover’s dream. With an icy surface, it’s perfect for a bit of
+          ice skating, curling, hockey, or simple relaxation in your snug
+          wintery cabin.
+        </p>
+        <div class="footer flex">
+          <div>
+            <h4 class="clr-light ff-cond uppercase letter-space-3 fw-normal">
+              avg. distance
+            </h4>
+            <p class="uppercase clr-wight fw-normal fs-700 ff-bella">
+              628 mil. km
+            </p>
+          </div>
+          <div>
+            <h4 class="clr-light ff-cond uppercase letter-space-3 fw-normal">
+              est. travel time
+            </h4>
+            <p class="uppercase clr-wight fw-normal fs-700 ff-bella">3 years</p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="nav.js"></script>
+  </body>
+</html>

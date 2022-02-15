@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --ff-Berlow-Condensed: "Barlow Condensed", sans-serif;
+  --ff-Bellefair: "Bellefair", serif;
+
+  --clr-dark: #0b0d17;
+  --clr-light: #d0d6f9;
+  --clr-white: #ffffff;
+  --clr-transp-light: rgba(255, 255, 255, 0.3);
+
+  --fs-900: clamp(1.5rem, 2.5vw + 1rem, 4rem);
+  --ff-550: clamp(0.5rem, 3vw + 1rem, 1.2rem);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.body-technology {
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
+}
+.grid-container-tech {
+  grid-template-areas:
+    "tittle"
+    "image-sm"
+    "bubble-buttons"
+    "article-content";
+  padding-inline: 0;
+}
+.tittle {
+  grid-area: tittle;
+}
+.img-sm {
+  width: 880px;
+  max-width: 100%;
+  margin: 0 auto;
+  grid-area: image-sm;
+}
+.img-lg {
+  display: none;
+}
+.bubble-tab-div {
+  grid-area: bubble-buttons;
+  --flex-gap: clamp(1em, 5vw, 2em);
+  justify-content: center;
+}
+.bubble-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  padding: 0.3em;
+  aspect-ratio: 2.75;
+  background-color: transparent;
+  border: 1px solid var(--clr-extra-light);
+}
+.bubble-btn:hover {
+  border: 1px solid var(--clr-light);
+}
+.grid-container-tech .active {
+  background-color: var(--clr-white);
+  color: var(--clr-dark);
+}
+.content {
+  grid-area: article-content;
+  padding-inline: 1em;
+}
+.content p {
+  margin-block: 0.4em 0.65em;
+}
+
+/* ----------------------------------------- */
+/* ----------------media-queries-------=---- */
+/* ----------------------------------------- */
+
+@media (min-width: 35em) {
+  .body-technology {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+  .tittle {
+    text-align: left;
+    padding-inline-start: 2em;
+  }
+  .bubble-btn {
+    padding: 0.47em;
+    aspect-ratio: 2.2;
+  }
+  .content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 55em) {
+  .body-technology {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+  }
+  .grid-container-tech {
+    grid-template-areas: none;
+    grid-template-columns: none;
+    grid-template-columns: minmax(2em, 1fr) 1fr repeat(2, minmax(0, 30em)) minmax(
+        2em,
+        1fr
+      );
+    align-items: center;
+  }
+  .tittle {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    padding: 0;
+  }
+  .img-lg {
+    display: block;
+    max-width: 100%;
+    grid-column: 4 / -1;
+    grid-row: 2;
+    justify-self: end;
+  }
+  .content {
+    padding: 0;
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .bubble-tab-div {
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 2;
+    padding-inline-end: 2em;
+  }
+  .img-sm {
+    display: none;
+  }
+}

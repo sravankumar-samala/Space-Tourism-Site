@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!---------------------css links----------------------->
+
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <!----------------------------------------------------->
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="body-home">
+    <header id="mynav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/shared/logo.svg" alt="logo" class="logo-img" />
+        </a>
+      </div>
+
+      <button
+        class="nav-toggler"
+        aria-controls="nav-list"
+        aria-expanded="false"
+      >
+        <span class="sr-only">menu</span>
+      </button>
+
+      <ul class="nav-list" data-visible="false" id="nav-list">
+        <div class="line"></div>
+        <li class="nav-item uppercase">
+          <a href="index.html" data-visible="false" class="a-tag active"
+            ><span aria-hidden="true" class="num-indicator">00</span>home</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a href="crew-commander.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">01</span>crew</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a href="destination-moon.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">02</span
+            >destination</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a href="technology-vehicle.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">03</span
+            >technology</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main class="grid-container">
+      <section class="tittle-section">
+        <h1
+          class="tittle clr-light ff-cond fs-500 uppercase letter-space-1 line-h fw-normal"
+        >
+          so, you want to travel to
+          <span class="big-tittle fs-900 clr-white ff-bella">space</span>
+        </h1>
+        <p class="ff-normal clr-light line-h fs-400">
+          Let's face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we'll give you a truly out of this world
+          experience!
+        </p>
+      </section>
+
+      <section class="large-btn-section uppercase">
+        <a
+          href="destination-moon.html"
+          class="large-btn clr-dark bg-white fs-600 letter-space-3"
+          >Explore</a
+        >
+      </section>
+    </main>
+
+    <script src="nav.js"></script>
+  </body>
+</html>

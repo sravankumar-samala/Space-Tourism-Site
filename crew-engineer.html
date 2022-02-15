@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!---------------------css links----------------------->
+
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/crew.css" />
+    <!----------------------------------------------------->
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="body-crew">
+    <header id="mynav">
+      <a href="index.html" class="logo">
+        <img src="assets/shared/logo.svg" alt="logo" class="logo-img" />
+      </a>
+
+      <button
+        class="nav-toggler"
+        aria-controls="nav-list"
+        aria-expanded="false"
+      >
+        <span class="sr-only">menu</span>
+      </button>
+
+      <ul class="nav-list" data-visible="false" id="nav-list">
+        <div class="line"></div>
+
+        <li class="nav-item uppercase">
+          <a href="index.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">00</span>home</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a
+            href="crew-commander.html"
+            data-visible="false"
+            class="a-tag active"
+            ><span aria-hidden="true" class="num-indicator">01</span>crew</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a href="destination-moon.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">02</span
+            >destination</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a href="technology-vehicle.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">03</span
+            >technology</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main class="grid-container-crew grid-container grid">
+      <p
+        class="tittle clr-light ff-cond fs-500 uppercase letter-space-1 line-h fw-normal"
+      >
+        <span aria-hidden="true" class="num-indicator" id="num-indic-id"
+          >02</span
+        >Meet your crew
+      </p>
+      <img
+        src="./assets/crew/image-anousheh-ansari.png"
+        alt="moon image"
+        class="img"
+      />
+
+      <!-- -------------------dot-indicators-list------------------>
+
+      <div class="dot-indic-div flex">
+        <a href="crew-commander.html"
+          ><button class="dot-btn" aria-selected="true">
+            <span class="sr-only">slide button</span>
+          </button></a
+        >
+        <a href="crew-specialist.html"
+          ><button class="dot-btn" aria-selected="true">
+            <span class="sr-only">slide button</span>
+          </button></a
+        >
+        <a href="crew-pilot.html"
+          ><button class="dot-btn" aria-selected="true">
+            <span class="sr-only">slide button</span>
+          </button></a
+        >
+        <a href="crew-engineer.html"
+          ><button class="dot-btn active" aria-selected="true">
+            <span class="sr-only">slide button</span>
+          </button></a
+        >
+      </div>
+
+      <article class="content">
+        <h2 class="uppercase ff-bella fw-normal fs-550 clr-transp-light">
+          Flight Engineer
+        </h2>
+        <p class="big-tittle fs-900 clr-white ff-bella fw-normal uppercase">
+          Anousheh Ansari
+        </p>
+        <p class="ff-normal clr-light line-h fs-500 fw-normal">
+          Anousheh Ansari is an Iranian American engineer and co-founder of
+          Prodea Systems. Ansari was the fourth self-funded space tourist, the
+          first self-funded woman to fly to the ISS, and the first Iranian in
+          space.
+        </p>
+      </article>
+    </main>
+    <script src="nav.js"></script>
+  </body>
+</html>

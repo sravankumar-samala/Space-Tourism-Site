@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!---------------------css links----------------------->
+
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/technology.css" />
+    <!----------------------------------------------------->
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="body-technology">
+    <header id="mynav">
+      <a href="index.html" class="logo">
+        <img src="assets/shared/logo.svg" alt="logo" class="logo-img"/>
+      </a>
+
+      <button
+        class="nav-toggler"
+        aria-controls="nav-list"
+        aria-expanded="false"
+      >
+        <span class="sr-only">menu</span>
+      </button>
+
+      <ul class="nav-list" data-visible="false" id="nav-list">
+        <div class="line"></div>
+        <li class="nav-item uppercase">
+          <a href="index.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">00</span>home</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a href="crew-commander.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">01</span>crew</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a href="destination-moon.html" data-visible="false" class="a-tag"
+            ><span aria-hidden="true" class="num-indicator">02</span
+            >destination</a
+          >
+        </li>
+        <li class="nav-item uppercase">
+          <a href="technology-vehicle.html" data-visible="false" class="a-tag   active"
+            ><span aria-hidden="true" class="num-indicator">03</span
+            >technology</a
+          >
+        </li>
+      </ul>
+      </ul>
+    </header>
+
+    <main class="grid-container-tech grid-container grid">
+      <p
+        class="tittle clr-light ff-cond fs-500 uppercase letter-space-1 line-h fw-normal"
+      >
+        <span aria-hidden="true" class="num-indicator" id="num-indic-id"
+          >03</span
+        >space launch 101
+      </p>
+      
+      <img src="./assets/technology/image-space-capsule-portrait.jpg" alt="Space capsule image"  class="img img-lg">
+      <img src="./assets/technology/image-space-capsule-landscape.jpg" alt="Space capsule image"  class="img img-sm">
+      
+
+      <!-- -------------------bubble-indicators-list------------------>
+
+      <div class="bubble-tab-div flex">
+        <a href="technology-vehicle.html"
+          ><button class="bubble-btn clr-white fw-normal fs-700 ff-bella" aria-selected="true">
+            <span class="sr-only">Tab number 1</span>1
+          </button></a
+        >
+        <a href="technology-spaceport.html"
+          ><button class="bubble-btn clr-white fw-normal fs-700 ff-bella" aria-selected="true">
+            <span class="sr-only">Tab number 2</span>2
+          </button></a
+        >
+        <a href="technology-capsule.html"
+          ><button class="bubble-btn active clr-white fw-normal fs-700 ff-bella" aria-selected="true">
+            <span class="sr-only">Tab number 3</span>3
+          </button></a
+        >
+      </div>
+
+      <article class="content">
+        <h2 class="uppercase ff-cond fw-normal fs-550 clr-light letter-space-3">The Terminology...</h2>
+        <p class="big-tittle fs-900 clr-white ff-bella fw-normal uppercase">
+          Space capsule
+        </p>
+        <p class="ff-normal clr-light line-h fs-450 fw-normal">
+          A space capsule is an often-crewed spacecraft that uses a
+            blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our
+            capsule is where you'll spend your time during the flight. It includes a space
+            gym, cinema, and plenty of other activities to keep you entertained.
+        </p> 
+      </article>
+    </main>
+    
+    <script src="nav.js"></script>
+  </body>
+</html>
